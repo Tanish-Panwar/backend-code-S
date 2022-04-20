@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../database');
-const { Sample } = require('../models/feedbackmodel');
+const db = require('../db');
+const { Sample, Login } = require('../models/feedbackmodel');
 
 
 router.get('/', (req, res) => {
@@ -17,6 +17,10 @@ router.get('/', (req, res) => {
         }
     })
 });
+
+
+
+
 
 
 router.post('/', (req, res) => {
@@ -69,6 +73,10 @@ router.post('/', (req, res) => {
             }
         });
 });
+
+
+
+
 
 
 module.exports = router;
