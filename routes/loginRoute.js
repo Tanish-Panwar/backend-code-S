@@ -7,6 +7,7 @@ const {Login} = require('../models/login');
 
 // GET all users from postgreSQL database.
 // Getting all users from postgre.
+// Comment this this is just for testing.
 router.get('/', (req, res) => {
     db.query('SELECT * from public.users', (err, result) => {
         if (err) {

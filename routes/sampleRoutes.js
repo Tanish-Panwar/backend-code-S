@@ -4,6 +4,7 @@ const db = require('../db');
 const { Sample, Login } = require('../models/feedbackmodel');
 
 
+// For getting all the feedbacks.
 router.get('/', (req, res) => {
     db.query('SELECT * from public.sample', (err, result) => {
         if(err){
@@ -22,9 +23,10 @@ router.get('/', (req, res) => {
 
 
 
-
+// For Adding all the feedbacks.
 router.post('/', (req, res) => {
 
+    // Creating a new feedback object.
     var sample = new Sample({
         educatorname: req.body.educatorname,
         eventname: req.body.eventname,

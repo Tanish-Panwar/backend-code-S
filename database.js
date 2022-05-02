@@ -5,7 +5,7 @@ var config = {
     user: 'postgres', //env var: PGUSER
     host: 'localhost',
     database: 'postgres', // change to your database name
-    password: '--Add Your Password--',  // Change this line according to your password
+    password: 'Change-this',  // Change this line according to your password
     port: 5432
 };
 
