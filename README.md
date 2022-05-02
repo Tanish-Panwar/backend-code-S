@@ -17,3 +17,8 @@ npm i mongoose <br/>
 
 If it doesn't works try to delete package.json and package-lock.json, node-modules
 And try doing above steps again.
+
+
+# If getting error in angular (Frontend) try reading this post:
+
+https://stackoverflow.com/questions/50333003/could-not-find-module-angular-devkit-build-angular
